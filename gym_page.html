@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gym Page</title>
+    </head>
+    <body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .benefits {
+            margin-bottom: 30px;
+        }
+        .benefits ul {
+            list-style: none;
+            padding: 0;
+        }
+        .benefits li {
+            margin-bottom: 10px;
+        }
+        .exercises {
+            margin-bottom: 30px;
+        }
+        .exercises img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .form-container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <div class="container">
+        <h2>Welcome to Our Gym</h2>
+        <p>We provide a range of fitness solutions to help you achieve your health and wellness goals. Our gym offers state-of-the-art equipment, experienced trainers, and a supportive community to help you on your fitness journey.</p>
+
+        <div class="benefits">
+            <h3>Benefits of Joining Our Gym:</h3>
+            <ul>
+                <li>Access to top-quality fitness equipment</li>
+                <li>Personalized training programs</li>
+                <li>Group fitness classes</li>
+                <li>Nutritional guidance</li>
+                <li>Supportive community atmosphere</li>
+            </ul>
+        </div>
+
+     
+
+        <div class="form-container">
+            <h3>Contact Us</h3>
+            <form id="contactForm" action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

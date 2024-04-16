@@ -1,0 +1,22 @@
+header.bg-success {
+    background-color: #28a745; /* Change the background color to a nice color */
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for smooth hover effect */
+}
+
+header.bg-success:hover {
+    background-color: #33d143; /* Change the background color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a glowing effect on hover */
+}
+
+header.bg-success h1,
+header.bg-success h2 {
+    font-family: Arial, sans-serif; /* Change font family for the text */
+    transition: color 0.3s; /* Add transition for text color change */
+}
+
+header.bg-success:hover h1,
+header.bg-success:hover h2 {
+    color: white; /* Change text color on hover */
+}

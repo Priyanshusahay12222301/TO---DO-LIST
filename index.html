@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+    
+</head>
+<body>
+    <header class="bg-success text-white p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h1 style="font-size: 50px;color: black;" id="heading">
+                        <strong>ToDo List</strong>
+                        <h2>Plan your schedule.....</h2>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="calendar"></div>
+
+        <h2>Add Items</h2>
+
+        <label id="lblsuccess" class="text-success" style="display: inline-flexbox;">
+        </label>
+
+        <form id="addForm">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                    <input type="text" onkeyup="toggleButton(this, 'submit')" class="form-control" id="item">
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <input type="submit" class="btn btn-dark btn-block" id="submit" value="Submit" disabled>
+                </div>
+            </div>
+        </form>
+
+        <h3 class="mt-4">Tasks</h3>
+
+        <form id="addForm">
+            <ul class="list-group" id="items"></ul>
+        </form>
+        <h1>Take more care......</h1>
+    </div>
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <button type="button" class="btn btn-primary btn-block btn-green" onclick="window.open('gym_page.html', '_blank')">
+                    <img src="gym.jpg" class="btn-img" alt="Image 1">
+                </button>
+            </div>
+            <div class="col-md-6 mb-3">
+                <button type="button" class="btn btn-primary btn-block btn-yellow" onclick="window.open('Sports.html', '_blank')">
+                    <img src="images.jpeg" class="btn-img" alt="Image 2">
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <button type="button" class="btn btn-primary btn-block btn-red" onclick="window.open('healthy.html', '_blank')">
+                    <img src="logo.jpeg" class="btn-img" alt="Image 3">
+                </button>
+            </div>
+            <div class="col-md-6 mb-3">
+                <button type="button" class="btn btn-primary btn-block btn-blue" onclick="window.open('Diet.html', '_blank')">
+                    <img src="download.png" class="btn-img" alt="Image 4">
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
